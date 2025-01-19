@@ -13,6 +13,6 @@ RUN apt-get update \
 RUN usermod -a -G root jenkins
 RUN usermod -aG docker jenkins
 # Good idea to switch back to the jenkins user.
-USER jenkins
+# USER jenkins
 
 # docker build -t jenkinsdocker .

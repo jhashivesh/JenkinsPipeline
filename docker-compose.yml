@@ -2,6 +2,9 @@ version: "3.7"
 services:
   jenkins:
     image: jenkinsdocker:latest
+    build:
+      context: .
+      dockerfile: Jenkins/Dockerfile
     privileged: true
     user: root
     ports:
