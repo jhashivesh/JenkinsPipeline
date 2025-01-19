@@ -1,0 +1,14 @@
+pipeline{
+	agent {
+		label 'docker-worker-node-1'
+	}
+	stages {
+		stage('Hello') {
+			steps {
+				sh 'java --version'
+        echo 'Get working directory'
+				sh 'pwd'
+			}
+		}
+	}
+}
